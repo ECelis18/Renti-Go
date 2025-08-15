@@ -1,0 +1,701 @@
+/* ------------------ RESET Y CONFIGURACIÓN BASE ------------------ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* ------------------ CONTAINER GLOBAL ------------------ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+/* --- Navegación --- */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #000;
+}
+
+/* --- Botones de autenticación --- */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.login-btn:hover {
+    color: #000;
+}
+
+.register-btn {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.register-btn:hover {
+    background: #333;
+}
+
+/* ------------------ SECCIÓN HERO ------------------ */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* esto es clave para alinear a la izquierda */
+    height: 100vh;
+    background: url('ruta-de-tu-imagen.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 600px; /* Limita el ancho */
+    width: 100%;
+    padding: 40px 20px;
+    
+    border-radius: 12px; /* Opcional */
+}
+
+.hero-content {
+    position: absolute; /* o 'fixed' si quieres que sea relativo al viewport */
+    left: 50px; /* Ajusta según necesites */
+    top: 100px; /* Ajusta según necesites */
+    max-width: 600px;
+    text-align: left;
+    z-index: 2;
+    margin-left: 0 !important;
+    padding-left: 40px !important;
+}
+
+.hero-content h1 {
+    font-size: clamp(28px, 6vw, 48px);
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-size: clamp(14px, 4vw, 16px);
+    color: #000000;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+    max-width: 500px;
+}
+
+.hero-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    width: auto;
+}
+
+.hero-btn:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.register-btn:hover {
+    background: #333;
+}
+
+/* ------------------ FORMULARIO DE RESERVA ------------------ */
+#hero {
+    position: relative;
+    min-height: 100vh;
+    background: url('/assets/hero.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+
+/* FORMULARIO DE RESERVA */
+
+#reserva-flotante {
+    display: flex;
+    justify-content: center;
+    margin-top: -130px; /* lo acerca visualmente al hero, ajusta a gusto */
+    z-index: 5;
+    position: relative;
+}
+
+#formulario-reserva {
+    position: relative;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.search-form {
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-form input {
+    background: transparent;
+    border: none;
+    color: rgba(148, 145, 145, 0.781);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 180px;
+    text-align: center;
+}
+
+.search-form label {
+    color: white;
+    font-size: 14px;
+}
+
+.search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #f0f0f0;
+}
+
+/* ------------------ SECCIÓN DE MARCAS ------------------ */
+.brands-section {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.brand-logo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ------------------ SECCIÓN "Marcas" ------------------ */
+.brands-section {
+    padding: 50px 0;
+    margin: 80px 0 40px;
+    text-align: center;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ------------------ SECCIÓN "¿POR QUÉ ELEGIR?" ------------------ */
+#porque_elegir {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#porque_elegir h2 {
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.5px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 12px 0;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ------------------ Catalogo ------------------ */
+
+.catalog{
+    padding: 80px 0;
+    background: #f8f9fa;
+    width: 100%;
+}
+
+.catalog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.catalog h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 15px;
+}
+
+.vehiculos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20 0px;
+}
+
+.vehiculo-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.vehiculo-card:hover{
+    transform: translateY(-5px);
+}
+
+.vehiculo-img-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.vehiculo-card img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+.vehiculo-info{
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehiculo-info h3{
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.description{
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.info{
+    font-size: 12px;
+    line-height: 1.4rem;
+    margin: 1.6rem auto;
+    text-align: center;
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, gray, #717b85);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    margin: 15px 0;
+    width: auto; 
+    display: inline-block; 
+    align-self: center; 
+    max-width: 90%; 
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, #717b85, gray);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+}
+
+
+/* ------------------ SECCIÓN CONTACTO ------------------ */
+.contact-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.contact-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background:gray;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item .icon {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    color: gray;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: gray;
+    outline: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.map-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.map-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    height: 400px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.map-container img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.map-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+}
+
+/* ------------------ Registro ------------------ */
+.registro-container {
+    background: white;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-group input:focus {
+    border-color: gray;
+    outline: none;
+}
+
+/* Botón idéntico al login */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background: gray;
+}
+
+/* ------------------ Login ------------------ */
+.auth-container {
+    padding: 80px 0;
+    background: #f8f9fa;
+    min-height: calc(100vh - 150px); /* Ajusta según tu header/footer */
+}
+
+.auth-card {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.auth-form input:focus {
+    border-color: gray;
+    outline: none;
+}
+
+.auth-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background: url('assets/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-position: bottom;
+    padding: 60px 0 30px;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}

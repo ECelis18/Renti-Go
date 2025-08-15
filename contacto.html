@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/favicon.png" type="image/png" sizes="32x32">
+    <title>Contacto - RentiGO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">RentiGO</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="#">Servicios</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Iniciar sesión</a>
+                <a href="registro.html" class="register-btn">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
+                        <div class="contact-item">
+                            <i class="icon">📍</i>
+                            <p>Av. Principal 1234, Ciudad</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon">📞</i>
+                            <p>+1 234 567 890</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon">✉️</i>
+                            <p>info@rentigo.com</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-secondary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>Nuestra ubicación</h3>
+                <div class="map-container">
+                    <img src="assets/mapa.png" alt="Imagen del mapa">
+                    <div class="map-placeholder">
+                        <p>Mapa de ubicación aparecería aquí</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RentiGo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

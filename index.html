@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <title>RentiGO</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">RentiGO</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="#">Servicios</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Iniciar sesión</a>
+                <a href="registro.html" class="register-btn">Registrarse</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>El auto perfecto te está esperando!</h1>
+                <p>Experimenta el lujo y la comodidad con RentiGo. Elige entre una gama de autos de primer nivel.
+                </p>
+                <button class="hero-btn">Reserva ahora</button>
+            </div>
+        </section>
+
+        <div id="reserva-flotante">
+            <form class="search-form">
+                <div class="form-group-search">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" name="ubicacion" id="ubicacion" placeholder="¿Dónde recoges el auto?" required>
+                </div>
+                <div class="form-group-search">
+                    <label for="fecha-recogida">Fecha de recogida</label>
+                    <input type="date" name="fecha-recogida" id="fecha-recogida" required>
+                </div>
+                <div class="form-group-search">
+                    <label for="fecha-regreso">Fecha de regreso</label>
+                    <input type="date" name="fecha-regreso" id="fecha-regreso" required>
+                </div>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+        </div>
+
+
+        <!-- Mejora: Sección de marcas de autos -->
+        <section class="brands-section">
+            <div class="container">
+                <div class="brands-grid">
+                    <!-- Mejora: Logos de marcas como SVG placeholder -->
+                    <div class="brand-logo">
+                        <h1>BMW</h1>
+                    </div>
+                    <div class="brand-logo">
+                        <h1>HONDA</h1>
+                    </div>
+                    <div class="brand-logo">
+                        <h1>TOYOTA</h1>
+                    </div>
+                    <div class="brand-logo">
+                        <h1>MERCEDES</h1>
+                    </div>
+                    <div class="brand-logo">
+                        <h1>MINI</h1>
+                    </div>
+                    <div class="brand-logo">
+                        <h1>LAND ROVER</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="porque_elegir">
+            <div class="container">
+                <h2>¿Por qué elegir RentiGo?</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🚗</div>
+                        <h3>Amplia variedad de autos</h3>
+                        <p>Desde económico hasta lujoso. Encuentra el auto que más te convenga para cualquier ocasión.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Precios competitivos</h3>
+                        <p>Mejores tarifas garantizadas con transparencia total en costos. Sin sorpresas al final.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Soporte 24/7</h3>
+                        <p>Equipo de servicio al cliente dedicado y listo para ayudar en cualquier momento del día.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RentiGo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
