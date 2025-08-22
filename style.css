@@ -184,7 +184,7 @@ header nav a:hover {
 #hero {
     position: relative;
     min-height: 100vh;
-    background: url('/assets/hero.png') no-repeat center center;
+    background: url('assets/hero.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
