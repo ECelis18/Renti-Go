@@ -114,7 +114,6 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start; /* esto es clave para alinear a la izquierda */
     height: 100vh;
-    background: url('ruta-de-tu-imagen.jpg') no-repeat center center;
     background-size: cover;
 }
 
