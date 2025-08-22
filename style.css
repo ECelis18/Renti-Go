@@ -109,15 +109,16 @@ header nav a:hover {
 }
 
 #hero {
-    align-items: flex-start;
     position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 1200px;
     background: url('assets/hero-fondo.png') no-repeat center center;
-    min-height: 100vh;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px 20px;
-    color: #fff;
+    align-items: center;
+    overflow: hidden;
 }
 
 
@@ -691,3 +692,72 @@ footer p {
     font-size: 14px;
     opacity: 0.8;
 }
+
+ /* ------------------ RESPONSIVE ------------------ */
+        @media (min-width: 1920px) {
+            #hero {
+                height: 80vh;
+                min-height: 800px;
+            }
+            
+            .hero-content {
+                max-width: 900px;
+            }
+        }
+
+        @media (min-width: 2560px) {
+            #hero {
+                height: 70vh;
+                min-height: 900px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .hero-content {
+                margin-left: clamp(20px, 4vw, 60px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            #hero {
+                height: 90vh;
+                min-height: 500px;
+            }
+
+            .hero-content {
+                margin-left: 20px;
+                padding: 20px;
+                max-width: calc(100vw - 40px);
+            }
+
+            .search-form {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .search-form input {
+                width: 100%;
+                min-width: 200px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .brands-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            #hero {
+                height: 85vh;
+                min-height: 450px;
+            }
+
+            .hero-content {
+                margin-left: 15px;
+                padding: 15px;
+            }
+        }
