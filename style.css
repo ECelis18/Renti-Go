@@ -111,7 +111,7 @@ header nav a:hover {
 #hero {
     align-items: flex-start;
     position: relative;
-    background: url('assets/hero.png') no-repeat center center;
+    background: url('assets/hero-fondo.png') no-repeat center center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
