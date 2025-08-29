@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* ------------------ CONTAINER GLOBAL ------------------ */
@@ -385,7 +387,8 @@ header .logo {
     color: #2c3e50;
     margin-bottom: 3rem;
     position: relative;
-    padding: 15px;
+    padding: 8px;
+    font-weight: bold;
 }
 
 .vehiculos-grid {
@@ -454,11 +457,11 @@ header .logo {
 }
 
 .btn-secondary {
-    background: linear-gradient(to right, gray, #717b85);
+    background-color: #000000;
     color: white;
     border: none;
     padding: 12px 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -474,7 +477,8 @@ header .logo {
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(to right, #717b85, gray);
+    background-color: #666;
+    color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
 }
