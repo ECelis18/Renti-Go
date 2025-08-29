@@ -388,7 +388,17 @@ header .logo {
     margin-bottom: 3rem;
     position: relative;
     padding: 8px;
-    font-weight: bold;
+}
+
+.catalog h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: gray;
 }
 
 .vehiculos-grid {
@@ -744,7 +754,7 @@ footer p {
     }
 }
 
-/* ======== HERO + FORM MOBILE ADAPTATION ======== */
+/* Móvil y tablets */
 @media (max-width: 768px) {
 
     /* Hero se adapta con imagen */
@@ -844,7 +854,50 @@ footer p {
         grid-template-columns: 1fr !important;
         gap: 20px;
     }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        /* una sola columna */
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        /* botón ancho completo en móvil */
+    }
 }
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    .contact-form,
+    .contact-info {
+        font-size: 14px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
 
 
 @media (max-width: 480px) {
