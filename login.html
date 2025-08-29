@@ -7,53 +7,103 @@
     <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
     <title>Login - RentiGO</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <p class="logo">RentiGO</p>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="categorias.html">Categorías</a>
-                <a href="#">Servicios</a>
-                <a href="contacto.html" class="active">Contacto</a>
-            </nav>
-            <div class="auth-buttons">
-                <a href="login.html" class="login-btn">Iniciar sesión</a>
-                <a href="registro.html" class="register-btn">Registrarse</a>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo fw-bold" href="index.html">RentiGO</a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <!-- Botones -->
+                    <div class="auth-buttons d-flex gap-2">
+                        <a href="login.html" class="login-btn">Iniciar sesión</a>
+                        <a href="registro.html" class="register-btn">Registrarse</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="auth-container">
-        <div class="container">
-            <div class="auth-card">
-                <h2>Iniciar sesión</h2>
-                <form class="auth-form">
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" required>
+    <main class="login-auth">
+        <div class="container-fluid min-vh-100">
+            <div class="row h-100 flex-column flex-lg-row">
+
+                <!-- Columna Imagen -->
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center p-4">
+                    <img src="assets/login.webp" alt="Ilustración login" class="img-fluid rounded-4"
+                        style="max-height: 300px; object-fit: contain;">
+                </div>
+
+                <!-- Columna Formulario -->
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="login-card shadow-lg p-4 rounded-4 bg-white w-100" style="max-width: 420px;">
+                        <h2 class="fw-bold mb-2 text-center">Bienvenido de nuevo</h2>
+                        <p class="text-muted small mb-4 text-center">Accede con tu cuenta para continuar</p>
+
+                        <!-- Formulario -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                <input type="email" class="form-control rounded-pill" id="email"
+                                    placeholder="ejemplo@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-semibold">Contraseña</label>
+                                <input type="password" class="form-control rounded-pill" id="password"
+                                    placeholder="••••••••" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark w-100 rounded-pill py-2">Ingresar</button>
+                        </form>
+
+                        <p class="small mt-3 text-center">
+                            ¿No tienes cuenta? <a href="registro.html"
+                                class="text-decoration-none fw-semibold">Regístrate aquí</a>
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" required>
-                    </div>
-                    <button type="submit" class="btn-secondary">Ingresar</button>
-                    <p class="auth-link">
-                        ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
-                    </p>
-                </form>
+                </div>
             </div>
         </div>
-
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 RentiGo. Todos los derechos reservados.</p>
+
+    <footer class="footer text-center text-white py-3">
+        <!-- Imagen decorativa -->
+        <div class="footer-bg">
+            <img src="assets/fondo.png" alt="Decoración footer" class="img-fluid">
+        </div>
+
+        <!-- Contenido -->
+        <div class="container mt-3">
+            <p class="mb-1">© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
