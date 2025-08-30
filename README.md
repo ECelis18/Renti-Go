@@ -2,9 +2,9 @@
 
 Integrantes:
 
-Daniel Avendaño Patiño
-Juan Felipe Vasquez
-Emanuel Celis Cano
+Daniel Avendaño Patiño, 
+Juan Felipe Vasquez, 
+Emanuel Celis Cano.
 
 Una plataforma web moderna y elegante para el alquiler de vehículos, diseñada para ofrecer una experiencia de usuario intuitiva, profesional y completamente responsive.
 
